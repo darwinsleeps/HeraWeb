@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Voga";
+    src: url(fonts/CDType\ -\ Voga\ Medium.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0 200px;
+}
+header{
+    
+}
+
+.nav-bar{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logo{
+    font-family: "Voga";
+    display: flex;
+    align-items: center;
+    margin: 0 200px;
+}
+
+.logo h1{
+    font-size: 2.5rem;
+    color: #171717;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 30px;
+    
+}
+
+.nav-link{
+    font-family: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #171717;
+}
+
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.inicio img{
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.voga{
+    font-family: "Voga";
+    display: flex;
+}
+
+.modelos{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.modelos img{
+    border-radius: 5px;
+    display: flex;
+    width: 420px;
+    height: 632px;
+    margin: 0 25px;
+}
+
+.modelos .voga{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalogo{
+    background-color: transparent;
+    height: 900px;
+    height: 900px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-bord{
+    border-radius: 5px;
+    display: flex;
+    width: 1310px;
+    height: 500px;
+    border: solid 3px #171717;
+    background-color: #ffffff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(fonts/fun.svg);
+}
+
+.card-bord .voga{
+    text-align: justify;
+    font-size: 50px;
+    display: flex;
+    padding: 50px;
+}
+
+.card-bord button{
+    border-radius: 5px;
+    font-family: "Voga";
+    color: #ffffff;
+    background-color: #171717;
+    font-size: 40px;
+    border: 0;
+    width: 200px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.card-bord button:hover{
+    
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    height: 5vh;
+}
+
+.oie{
+    justify-content: space-around;
+    display: flex;  
+    align-items: center;
+}
+
+footer .voga{
+    font-size: 20PX;
+    color: rgb(0, 0, 0);
+}
+
+svg{
+    width: 1920px;
+}
+
+.fun{
+
+
+}
