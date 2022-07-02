@@ -3,20 +3,21 @@
     src: url(fonts/CDType\ -\ Voga\ Medium.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0 0;
+    padding: 0 0;
 }
 
 body{
-    padding: 0 200px;
-}
-header{
-    
+    padding: 0 0px;
 }
 
+/*NAV BAR*/
+
 .nav-bar{
-    background-color: transparent;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -31,7 +32,7 @@ header{
 
 .logo h1{
     font-size: 2.5rem;
-    color: #171717;
+    color: #000;
 }
 
 .nav-list{
@@ -47,7 +48,10 @@ header{
 
 .nav-item{
     margin: 0 30px;
-    
+}
+.nav-link:hover{
+    border-bottom: #171717 1px solid;
+    transition: 0.4s;  
 }
 
 .nav-link{
@@ -57,26 +61,21 @@ header{
     color: #171717;
 }
 
+/*PAGINA INICIAL*/
 
 .inicio{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .inicio img{
-    margin-top: 70px;
-    border-radius: 5px;
-}
-
-.voga{
-    font-family: "Voga";
-    display: flex;
+    margin-top: 10px;
 }
 
 .modelos{
-    
+    padding: 0 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,16 +83,18 @@ header{
 }
 
 .modelos img{
-    border-radius: 5px;
     display: flex;
     width: 420px;
     height: 632px;
     margin: 0 25px;
 }
 
-.modelos .voga{
-    justify-content: space-between;
+.modelos h1{
     align-items: center;
+    font-family: "Voga";
+    text-align: center;
+    font-size: 40px;
+    display: flex;
 }
 
 .catalogo{
@@ -109,19 +110,19 @@ header{
 .card-bord{
     border-radius: 5px;
     display: flex;
-    width: 1310px;
+    width: 1000px;
     height: 500px;
     border: solid 3px #171717;
     background-color: #ffffff;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url(fonts/fun.svg);
 }
 
-.card-bord .voga{
-    text-align: justify;
-    font-size: 50px;
+.card-bord h1{
+    font-family: "Voga";
+    text-align: center;
+    font-size: 40px;
     display: flex;
     padding: 50px;
 }
@@ -129,46 +130,193 @@ header{
 .card-bord button{
     border-radius: 5px;
     font-family: "Voga";
+    font-size: 30px;
     color: #ffffff;
     background-color: #171717;
-    font-size: 40px;
     border: 0;
-    width: 200px;
-    height: 100px;
-    transition: 0.5s;
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .card-bord button:hover{
-    
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+/*CATALOGO DE PRODUTOS*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-footer{
-    position: relative;
+.catalogo_produtos{
+    width: 1400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
-
-    height: 5vh;
-}
-
-.oie{
-    justify-content: space-around;
-    display: flex;  
     align-items: center;
 }
 
-footer .voga{
-    font-size: 20PX;
-    color: rgb(0, 0, 0);
+.container_produtos{
+    display: flex;
 }
 
-svg{
-    width: 1920px;
+.ul_produtos{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.fun{
+.conteudo_produtos{
+    height: 400px;
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 1px #171717;
+    transition: 0.4s;
+}
 
+.conteudo_produtos:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
 
+.conteudo_produtos img{
+    height: 200px;
+    width: 200px;
+}
+
+.conteudo_produtos p{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #171717;
+}
+
+.conteudo_produtos a{
+    height: 400px;
+    width: 250px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*COMPRA*/
+.container_compra{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    width: 1400px;
+}
+
+.conteudo_compra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img_compra{
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.img_compra img{
+    transition: 0.4s;
+}
+
+.img_compra img:hover{
+    transition: 0.4s;
+    transform: scale(1.5);
+}
+
+.info_compra{
+    margin-left: 100px;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 400px;
+}
+
+.info_compra h1{
+    font-family: "Poppins";
+}
+.info_compra p{
+    padding: 25px;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.info_compra input{
+    margin-top: 25px;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(184, 184, 184);
+    border: 0;
+}
+
+.comprar_button{
+    border: 0;
+    cursor: pointer;
+    font-family: "Poppins";
+    color: #ffffff;
+    background-color: #171717;
+    height: 50px;
+    width: 150px;
+}
+
+.container_tamanhos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.tamanhos_compra{
+    border-radius: 30px;
+    border: solid 1px #171717;
+    cursor: pointer;
+    font-family: "Poppins";
+    color: #171717;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.tamanhos_compra:hover{
+    color: #fff;
+    background-color: #171717;
+    transition: 0.2s;
+}
+
+.frete{
+    margin-top: 40px;
+}
+
+.frete input{
+    color: #171717;
+    cursor: text;
+    padding-left: 10px;
+}
+
+.frete button{
+    cursor: pointer;
+    font-family: "Poppins";
+    color: #ffffff;
+    background-color: #171717;
+    height: 50px;
+    width: 150px;
 }
